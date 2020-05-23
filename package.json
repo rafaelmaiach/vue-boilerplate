@@ -5,9 +5,9 @@
 	"scripts": {
 		"dev": "vue-cli-service serve",
 		"build": "vue-cli-service build",
-		"test:unit": "vue-cli-service test:unit",
-		"test:unit:watch": "vue-cli-service test:unit --watchAll",
-		"test:unit:coverage": "vue-cli-service test:unit --coverage",
+		"test:unit": "vue-cli-service test:unit --passWithNoTests",
+		"test:unit:watch": "vue-cli-service test:unit --watchAll --passWithNoTests",
+		"test:unit:coverage": "vue-cli-service test:unit --coverage --passWithNoTests",
 		"lint": "vue-cli-service lint --no-fix",
 		"bundle-report": "vue-cli-service build --report"
 	},
