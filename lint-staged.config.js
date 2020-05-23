@@ -1,6 +1,7 @@
 module.exports = {
-	'*.{js, vue}': [
+	'*.{js,vue}': [
 		'yarn lint',
 		'yarn test:unit',
 	],
+	'*.{css,vue}': 'yarn lint:styles',
 };

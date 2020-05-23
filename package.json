@@ -9,6 +9,7 @@
 		"test:unit:watch": "vue-cli-service test:unit --watchAll --passWithNoTests",
 		"test:unit:coverage": "vue-cli-service test:unit --coverage --passWithNoTests",
 		"lint": "vue-cli-service lint --no-fix",
+		"lint:styles": "stylelint .",
 		"bundle-report": "vue-cli-service build --report"
 	},
 	"dependencies": {
