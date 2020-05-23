@@ -9,7 +9,7 @@
 		"test:unit:watch": "vue-cli-service test:unit --watchAll --passWithNoTests",
 		"test:unit:coverage": "vue-cli-service test:unit --coverage --passWithNoTests",
 		"lint": "vue-cli-service lint --no-fix",
-		"lint:styles": "stylelint .",
+		"lint:styles": "stylelint \"src/**/*.{vue,scss}\"",
 		"bundle-report": "vue-cli-service build --report"
 	},
 	"dependencies": {
@@ -47,6 +47,7 @@
 		"sass-loader": "8.0.2",
 		"stylelint": "13.5.0",
 		"stylelint-config-sass-guidelines": "7.0.0",
+		"stylelint-scss": "3.17.2",
 		"vue-i18n": "8.17.7",
 		"vue-template-compiler": "2.6.11",
 		"vue-types": "1.7.0",

@@ -4,4 +4,7 @@ module.exports = {
 		indentation: 'tab',
 		'order/properties-alphabetical-order': null,
 	},
+	plugins: [
+		'stylelint-scss',
+	],
 };
