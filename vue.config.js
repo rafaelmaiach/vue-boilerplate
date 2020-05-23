@@ -22,4 +22,15 @@ module.exports = {
 			config.resolve.alias.set('vue-types', vueTypesShimPath);
 		}
 	},
+
+	css: {
+		loaderOptions: {
+			sass: {
+				prependData: `
+					@import "@/styles/variables.scss";
+					@import "@/styles/media-queries.scss";
+				`,
+			},
+		},
+	},
 };
