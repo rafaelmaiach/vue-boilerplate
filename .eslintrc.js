@@ -15,6 +15,7 @@ module.exports = {
 	rules: {
 		'arrow-parens': ['error', 'as-needed', { requireForBlockBody: true }],
 		'consistent-return': 'off',
+		'global-require': 'off',
 		'import/no-extraneous-dependencies': 'off',
 		'import/no-unresolved': 'off',
 		'import/prefer-default-export': 'off',
@@ -77,4 +78,10 @@ module.exports = {
 			},
 		},
 	],
+	settings: {
+		'vue-i18n': {
+			localeDir: './src/i18n/locales/*.js',
+		},
+		'vue-types/namespace': ['VueTypes'],
+	},
 };
