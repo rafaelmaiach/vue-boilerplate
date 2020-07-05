@@ -3,10 +3,12 @@ module.exports = {
 	env: {
 		node: true,
 	},
+	plugins: [
+		'@intlify/vue-i18n',
+	],
 	extends: [
 		'plugin:vue/recommended',
 		'@vue/airbnb',
-		'plugin:vue-i18n/recommended',
 		'plugin:vue-types/strongly-recommended',
 	],
 	parserOptions: {
@@ -43,10 +45,12 @@ module.exports = {
 		'vue/attribute-hyphenation': 'off',
 		'vue/html-self-closing': 'off',
 		'vue/html-indent': ['error', 'tab'],
-		'vue-i18n/no-dynamic-keys': 'off',
-		'vue-i18n/no-unused-keys': ['error', {
-			extensions: ['.js', '.vue']
-		}],
+		'@intlify/vue-i18n/no-dynamic-keys': 'warn',
+		'@intlify/vue-i18n/no-html-messages': 'error',
+		'@intlify/vue-i18n/no-missing-keys': 'error',
+		'@intlify/vue-i18n/no-raw-text': 'warn',
+		'@intlify/vue-i18n/no-unused-keys': 'warn',
+		'@intlify/vue-i18n/no-v-html': 'error',
 		'vue/max-attributes-per-line': ['error', {
 			'singleline': 3,
 			'multiline': {
@@ -80,7 +84,7 @@ module.exports = {
 	],
 	settings: {
 		'vue-i18n': {
-			localeDir: './src/i18n/locales/*.js',
+			localeDir: './src/i18n/locales/*.json',
 		},
 		'vue-types/namespace': ['VueTypes'],
 	},
