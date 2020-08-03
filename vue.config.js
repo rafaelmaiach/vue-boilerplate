@@ -35,8 +35,7 @@ module.exports = {
 		loaderOptions: {
 			sass: {
 				additionalData: `
-					@import "@/styles/variables.scss";
-					@import "@/styles/media-queries.scss";
+					@import "@/styles/variables";
 				`,
 			},
 		},
